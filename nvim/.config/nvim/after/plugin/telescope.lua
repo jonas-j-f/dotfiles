@@ -11,7 +11,7 @@ require('telescope').setup{
 	['<C-y>'] = require('telescope.actions.layout').toggle_preview,
       }
     },
-    preview = {                                                                                                                                                                          
+    preview = {
       hide_on_startup = true -- hide previewer when picker starts
     }
   },
@@ -24,6 +24,9 @@ require('telescope').setup{
     -- Now the picker_config_key will be applied every time you call this
     -- builtin picker
     --
+    find_files = {
+        hidden = true
+    }
   },
   extensions = {
     -- Your extension configuration goes here:
@@ -36,4 +39,3 @@ require('telescope').setup{
 local builtin = require('telescope.builtin')
 vim.keymap.set('n',  '<C-p>', builtin.git_files, {})
 vim.keymap.set('n',  '<leader>t', builtin.find_files, {})
-
