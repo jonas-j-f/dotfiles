@@ -13,3 +13,4 @@ vim.o.mouse = ""
 vim.o.swapfile = false
 vim.o.backup = false
 vim.o.writebackup = false
+vim.o.signcolumn = "no"
