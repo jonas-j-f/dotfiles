@@ -1,3 +1,6 @@
+if [[ -z $DISPLAY ]] && [[ $TTY == "/dev/tty1" ]]; then
+    startx
+fi
 [[ $TERM == "dumb" ]] && return;
 [[ $TERM != "screen-256color" ]] && exec tmux
 
