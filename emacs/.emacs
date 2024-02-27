@@ -42,6 +42,11 @@
 (setq tab-bar-close-button-show nil)
 (setq tab-bar-new-button-show nil)
 
+(unless (package-installed-p 'evil)
+  (package-install 'evil))
+
+(unless (package-installed-p 'gruvbox-theme)
+  (package-install 'gruvbox-theme))
 (load-theme 'gruvbox t)
 
 (load-file (let ((coding-system-for-read 'utf-8))
@@ -107,3 +112,5 @@
 (evil-define-key 'insert 'global (kbd "C-v") 'yank)
 
 (set-face-attribute 'default nil :height 110)
+
+(setq visible-bell t)
