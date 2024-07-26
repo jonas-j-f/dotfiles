@@ -94,3 +94,4 @@ work(){
 	nohup evince "$1.pdf" &
 	nvim "$1.tex"
 }
+export PATH="$PATH:/opt/nvim-linux64/bin"

@@ -65,4 +65,17 @@ return require('packer').startup(function(use)
       -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
     }
   }
+
+  use{
+    "peterbjorgensen/sved"
+  }
+
+  use{
+    "lervag/vimtex",
+    init = function()
+        -- VimTeX configuration goes here, e.g.
+        vim.g.vimtex_view_method = "evince"
+    end
+  }
+
 end)

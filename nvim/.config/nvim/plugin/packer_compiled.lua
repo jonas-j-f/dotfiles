@@ -164,6 +164,11 @@ _G.packer_plugins = {
     path = "/home/jonas/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  sved = {
+    loaded = true,
+    path = "/home/jonas/.local/share/nvim/site/pack/packer/start/sved",
+    url = "https://github.com/peterbjorgensen/sved"
+  },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
     path = "/home/jonas/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
@@ -193,6 +198,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jonas/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
+  vimtex = {
+    loaded = true,
+    path = "/home/jonas/.local/share/nvim/site/pack/packer/start/vimtex",
+    url = "https://github.com/lervag/vimtex"
   }
 }
 
